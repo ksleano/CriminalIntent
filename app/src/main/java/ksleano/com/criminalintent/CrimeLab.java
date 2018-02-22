@@ -18,9 +18,16 @@ public class CrimeLab {
     // using list to store crimes. Temporary fix since we will be using sql for data storage
     private List<Crime> mCrimeList;
 
-    // private constructor for singletons
+    // private constructor for singletons use get() to call the constructor
     private CrimeLab(Context context){
         mCrimeList = new ArrayList<>();
+        // temporary crime generator
+        for (int i =0; i < 100; i++){
+            Crime crime = new Crime();
+            crime.setTitle("Crime #" + i);
+            crime.setSolved(i % 2 == 0);
+            mCrimeList.add(crime);
+        }
     }
 
     // the get() method will call the private constructor if the instance doesn't exist
