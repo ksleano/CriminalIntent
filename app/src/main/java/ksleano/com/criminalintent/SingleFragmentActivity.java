@@ -14,9 +14,10 @@ import android.support.v4.app.FragmentManager;
  */
 
 public abstract class SingleFragmentActivity extends AppCompatActivity {
+
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         // set the view to the activity_fragment
         setContentView(R.layout.activity_fragment);
 
