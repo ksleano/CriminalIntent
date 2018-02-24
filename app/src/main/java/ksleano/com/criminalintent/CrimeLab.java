@@ -8,7 +8,7 @@ import java.util.UUID;
 
 /**
  * Created by kslea_000 on 2/21/2018. This java class is a singleton designed to hold lists of crimes
- * Only one instance of CrimeLab will be created.
+ * Only one instance of CrimeLab will be created. Singleton
  */
 
 public class CrimeLab {

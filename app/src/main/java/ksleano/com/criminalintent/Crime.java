@@ -1,10 +1,12 @@
 package ksleano.com.criminalintent;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
 /**
  * Created by kslea_000 on 2/20/2018.
+ * This class's constructor makes the random UUID and the DATE
  */
 
 public class Crime {
